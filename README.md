@@ -13,8 +13,9 @@ Este proyecto implementa un flujo de **Change Data Capture (CDC)** utilizando:
 ## 📂 Estructura del proyecto
 ```
 .
-├── docker-compose.yml        # Definición de servicios
+├── docker-compose.yml             # Definición de servicios
 ├── db_movies_neflix_transact.sql  # Script SQL inicial de la base de datos
+├── register-mysql.json            # Define el conector de Debezium para capturar y transmitir sus cambios en tiempo real.
 └── README.md
 ```
 
@@ -73,5 +74,5 @@ Esto eliminará contenedores, red y volúmenes.
 - Si cambias la estructura de la DB, recuerda recrear los volúmenes para que Debezium detecte los cambios.  
 
 ---
-✍️ Autor: **Ilse (werlix)**  
-📅 Fecha: Agosto 2025
+✍️ Autora: **Ilse Zubieta**  
+📅 Fecha: 19 Agosto 2025
