@@ -69,10 +69,6 @@ docker-compose down -v
 ```
 Esto eliminará contenedores, red y volúmenes.
 
-## 📖 Notas
-- El archivo SQL debe existir con el nombre correcto (`db_movies_neflix_transact.sql`).  
-- Si cambias la estructura de la DB, recuerda recrear los volúmenes para que Debezium detecte los cambios.  
-
----
+## Datapath Tarea Módulo 8
 ✍️ Autora: **Ilse Zubieta**  
 📅 Fecha: 19 Agosto 2025
