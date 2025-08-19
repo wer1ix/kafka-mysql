@@ -51,16 +51,16 @@ Todos los servicios se conectan en la red `cdc-network`.
    ```
 
 ## 🔍 Consumir mensajes de Kafka
-Ejemplo para leer desde el topic `netflix.db_movies_netflix_transact.Movie`:
+Para buscar un valor como "John Doe" basta con filtrar la salida con grep.
+
+Ejemplo:
 
 ```bash
-docker exec -it kafka   /opt/bitnami/kafka/bin/kafka-console-consumer.sh   --bootstrap-server kafka:9092   --topic netflix.db_movies_netflix_transact.Movie   --from-beginning
-```
-
-Para filtrar por un valor específico (ejemplo `"John Doe"`):
-
-```bash
-... | grep "John Doe"
+docker exec -it kafka \
+  /opt/bitnami/kafka/bin/kafka-console-consumer.sh \
+  --bootstrap-server kafka:9092 \
+  --topic netflix.db_movies_netflix_transact.Movie \
+  --from-beginning | grep "John Doe"
 ```
 
 ## 🧹 Detener y limpiar
